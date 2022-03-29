@@ -9,7 +9,7 @@ app.use('/', express.static(__dirname));
   app.post('/', function (req, res) {
         
     console.log(req.body); 
-    res.send({"Result":"1"});
+    res.send(JSON.stringify({ Result: 1 }, null, 3));
     
         
     
