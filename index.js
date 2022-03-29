@@ -12,6 +12,7 @@ app.use('/', express.static(__dirname));
     
     async function asyncCall() {
       await new Promise(resolve => setTimeout(resolve, 1000));
+      res.setHeader('Content-Type', 'application/json');
       res.json({
         "api_GetContext" : {
             "_id": "5d15f436966b92b943be9219",
