@@ -31,7 +31,7 @@ app.use('/', express.static(__dirname));
             "email": "moon.petty@kongene.ca",
             "phone": "+1 (962) 489-3119"
         }
-      });
+    });
 
     }
     
