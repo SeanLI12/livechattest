@@ -11,6 +11,7 @@ const initServer = async () => {
         
     console.log(req.body); 
     res.send({"Result":"1"});
+    
         
 
   })
