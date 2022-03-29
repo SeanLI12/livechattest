@@ -9,8 +9,8 @@ app.use('/', express.static(__dirname));
   app.post('/', function (req, res) {
         
     console.log(req.body); 
-    res.setHeader('Content-Type', 'application/json');
-    res.send(JSON.stringify({
+    
+    res.json({
       "api_GetContext" : {
           "_id": "5d15f436966b92b943be9219",
           "index": 5,
@@ -28,7 +28,7 @@ app.use('/', express.static(__dirname));
           "email": "moon.petty@kongene.ca",
           "phone": "+1 (962) 489-3119"
       }
-  }));
+  });
 
     
 
