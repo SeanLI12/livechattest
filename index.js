@@ -10,7 +10,7 @@ const initServer = async () => {
   app.post('/', function (req, res) {
         
     console.log(req.body); 
-    response.send("ok");
+    res.send({"Result":"1"});
         
 
   })
@@ -21,7 +21,7 @@ const initServer = async () => {
   console.log("init server")
     
 
-  
+
 }
 
 
