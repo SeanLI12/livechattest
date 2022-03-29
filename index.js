@@ -9,6 +9,7 @@ app.use('/', express.static(__dirname));
   app.post('/', function (req, res) {
         
     console.log(req.body); 
+    res.setHeader('Content-Type', 'application/json');
     res.send(JSON.stringify({ Result: 1 }, null, 3));
     
         
